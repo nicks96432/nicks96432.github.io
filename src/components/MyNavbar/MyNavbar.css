@@ -1,0 +1,22 @@
+.navbar {
+	background: #487cce30;
+	border: 0.25rem dashed #487cce;
+	padding: 0 1rem;
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	font-size: calc(0.4rem + 1.5vw);
+}
+
+.navbar>.navbar-links {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.navbar-brand {
+	font-size: calc(0.5rem + 1.5vw);
+}
+
+.navbar-brand span {
+	font-size: smaller;
+}
