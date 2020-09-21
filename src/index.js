@@ -19,13 +19,13 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
 	<Container>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<MyNavbar />
 			<div id="content">
 				<Routes />
 			</div>
 			<footer className="blockquote-footer">
-				<p>我可能很廢@2020/9/18 react版 測試</p>
+				<p>我可能很廢@2020/9/21 react版 測試</p>
 			</footer>
 		</Router>
 	</Container>,

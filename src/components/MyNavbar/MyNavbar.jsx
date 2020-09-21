@@ -7,18 +7,18 @@ export class MyNavbar extends React.Component {
 		return (
 			<Navbar>
 				<Navbar.Brand>
-					<MyNavLink exact to="/">
+					<MyNavLink exact to={process.env.PUBLIC_URL + "/"}>
 						我可能很廢<span> 的個人空間</span>
 					</MyNavLink>
 				</Navbar.Brand>
 				<Navbar.Toggle />
 				<Nav className="navbar-links">
-					<MyNavLink to="/songs">歌曲</MyNavLink>
+					<MyNavLink to={process.env.PUBLIC_URL + "/songs"}>歌曲</MyNavLink>
 					{/* <MyNavLink to="#">測試1</MyNavLink>
 					<MyNavLink to="#">
 						<NavItem>測試2</NavItem>
 					</MyNavLink> */}
-					<MyNavLink to="/about">
+					<MyNavLink to={process.env.PUBLIC_URL + "/about"}>
 						<NavItem>關於</NavItem>
 					</MyNavLink>
 				</Nav>

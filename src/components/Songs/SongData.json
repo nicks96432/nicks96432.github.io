@@ -1334,6 +1334,29 @@
 		}
 	},
 	{
+		"id": 20028,
+		"type": "Angel",
+		"cover": "assets/cover/oclove.png",
+		"name_zh": "悠閒日常幸運草",
+		"name_jp": "オーディナリィ・クローバー",
+		"length": "00:02:23",
+		"BPM": "155",
+		"difficulty": {
+			"2M": 4,
+			"2M+": 12,
+			"4M": 8,
+			"6M": 11,
+			"MM": 16
+		},
+		"notes": {
+			"2M": 152,
+			"2M+": 448,
+			"4M": 300,
+			"6M": 438,
+			"MM": 643
+		}
+	},
+	{
 		"id": 30001,
 		"type": "All",
 		"cover": "assets/cover/hmt001.png",

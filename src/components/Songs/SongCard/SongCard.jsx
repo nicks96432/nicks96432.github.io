@@ -8,7 +8,7 @@ export class SongCard extends React.Component {
 			<Link
 				className={"card " + this.props.songType}
 				ref={this.typeRef}
-				to={`/songs/${this.props.songid}`}
+				to={process.env.PUBLIC_URL + `/songs/${this.props.songid}`}
 			>
 				<img
 					className="card-img-top"

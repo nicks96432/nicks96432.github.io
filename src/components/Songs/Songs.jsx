@@ -51,7 +51,6 @@ export class Songs extends React.Component {
 		});
 		this.setState({
 			renderSongs: filterSongs.map((songs, index) => {
-				console.log(songs);
 				return (
 					<SongCard
 						songid={songs.id}
