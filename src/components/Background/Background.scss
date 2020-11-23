@@ -1,0 +1,27 @@
+@media (min-width:1140px) {
+	#background {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		background-image: radial-gradient(#ffffffa0, #ffffffc0),
+			url("https://www.dropbox.com/s/qqmg0fuhkywpv85/Starry%20Melody!%20主視覺圖.webp?dl=1");
+		background-attachment: scroll;
+		background-size: cover;
+		background-position: center;
+		animation: normal forwards fadein 1.2s ease-in;
+	}
+
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

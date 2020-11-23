@@ -1,0 +1,44 @@
+.navbar {
+	background: #487cce30;
+	border: 0.25rem dashed #487cce;
+	padding: 0 1rem;
+	margin-top: 1vw;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	font-size: 1.5em;
+
+	>.navbar-links {
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+
+.navbar-title {
+	font-size: larger;
+
+	span {
+		font-size: smaller;
+	}
+}
+
+.dropdown-MLTD {
+	>a {
+		background-color: transparent;
+		color: #487cce;
+		font-size: inherit;
+		border: none;
+		padding: 0;
+	}
+
+	>.dropdown-menu {
+		margin: 0;
+		min-width: fit-content;
+		font-size: inherit;
+	}
+
+	.dropdown-item:hover {
+		background-color: white;
+		color: var(--black);
+	}
+}

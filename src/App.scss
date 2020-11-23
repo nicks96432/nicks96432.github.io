@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "jf-openhuninn";
+	src: local("jf-openhuninn"), url("./assets/jf-openhuninn-1.1.ttf");
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100vw;
+	font-family: "jf-openhuninn", Arial, Helvetica, sans-serif;
+	font-size: calc(0.5em + 0.5vw);
+	background-image: radial-gradient(#ffffffaa, #ffffffee);
+
+	>.container {
+		max-width: 90%;
+	}
+}
+
+a {
+	color: #487cce;
+	text-decoration: none;
+
+	&:hover {
+		color: #e85579;
+		text-decoration: none;
+	}
+
+	&:active {
+		color: #f4c71c;
+		text-decoration: none;
+	}
+}
+
+#content {
+	background: #487cce30;
+	border: 0.25rem solid #487cce;
+	margin-top: 1vw;
+}

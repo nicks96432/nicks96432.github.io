@@ -5,13 +5,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Web site created using create-react-app" />
-	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<link rel="icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon/logo192.png" />
 	<!--
 		manifest.json provides metadata used when your web app is installed on a
 		user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
 	-->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	<link rel="manifest" href="%PUBLIC_URL%/favicon/manifest.json" />
 	<!--
 		Notice the use of %PUBLIC_URL% in the tags above.
 		It will be replaced with the URL of the `public` folder during the build.
@@ -37,7 +37,13 @@
 </head>
 
 <body>
-	<div id="root"></div>
+	<noscript>
+		<s>
+			You need a <b>permit</b> to go fishing here. (你要有<b>許可證</b>才可以在這裡釣魚。)
+		</s>
+		<br /> You need to enable JavaScript to run this app. (你要啟用JavaScript才可以瀏覽此網頁)
+	</noscript>
+	<div id="root" class="container"></div>
 </body>
 
 </html>

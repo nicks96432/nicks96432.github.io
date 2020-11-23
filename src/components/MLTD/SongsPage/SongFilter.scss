@@ -1,0 +1,47 @@
+.song-filter {
+	@media screen and (min-width:768px) {
+
+		#button-Princess:hover,
+		.Princess-button-active {
+			background-color: #e85579;
+			color: white;
+		}
+
+		#button-Fairy:hover,
+		.Fairy-button-active {
+			background-color: #487cce;
+			color: white;
+		}
+
+		#button-Angel:hover,
+		.Angel-button-active {
+			background-color: #f4c71c;
+			color: white;
+		}
+
+		#button-All:hover,
+		.All-button-active {
+			background-color: #b78876;
+			color: white;
+		}
+	}
+
+	.transparent {
+		background-color: transparent;
+	}
+
+	img {
+		width: 2em;
+	}
+
+	>div {
+		button {
+			font-size: 1em;
+		}
+
+		text-align: center;
+		font-size: 1em;
+	}
+
+	margin: 5px 0;
+}

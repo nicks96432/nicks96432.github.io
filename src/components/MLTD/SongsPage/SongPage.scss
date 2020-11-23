@@ -1,0 +1,64 @@
+.song-page {
+	.song-cover-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.information-cover-container {
+		margin-top: 1em;
+	}
+
+	.song-information {
+		span {
+			background-color: #487cce;
+			color: #ffffff;
+			margin-right: 1.5vw;
+			padding: 0.5vw;
+			border-radius: 10%;
+		}
+
+		line-height: calc(2em + 1vw);
+	}
+
+
+	#song-cover {
+		width: calc(1em + 15vw);
+	}
+
+	#back-button {
+		background-color: #487cce;
+
+		&:hover {
+			background: #e85579;
+		}
+
+		margin: 10px 10px;
+		padding: 0.5vw 1vw;
+		border: 10px;
+		font-size: 1em;
+		border-radius: 5px;
+	}
+
+
+	.back-button-container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: right;
+		margin-right: 2vw;
+	}
+
+	.row {
+		margin: 1em 0;
+	}
+
+	#song-hardness {
+		* {
+			border: none;
+			text-align: center;
+		}
+
+		margin-top: 20px;
+	}
+}
