@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { DropdownMenu, Nav, Navbar, DropdownToggle, DropdownItem, Dropdown } from "reactstrap";
-import "./MyNavbar.scss";
 import { Link } from "react-router-dom";
-function MyNavbar() {
+import "./MyNavbar.scss";
+
+const MyNavbar = () => {
 	const [dropdownOpen_MLTD, setDropdownOpen_MLTD] = useState(false);
 	return (
 		<Navbar>
@@ -23,22 +24,22 @@ function MyNavbar() {
 					}}
 					className="dropdown-MLTD"
 				>
-					<DropdownToggle tag={Link} to={process.env.PUBLIC_URL + "/MLTD"} nav caret>
+					<DropdownToggle tag={Link} to="/MLTD" nav caret>
 						MLTD
 					</DropdownToggle>
 					<DropdownMenu>
-						<DropdownItem tag={Link} to={process.env.PUBLIC_URL + "/MLTD/songs"}>
+						<DropdownItem tag={Link} to="/MLTD/songs">
 							歌曲
 						</DropdownItem>
-						<DropdownItem tag={Link} to={process.env.PUBLIC_URL + "/MLTD/events"}>
+						<DropdownItem tag={Link} to="/MLTD/events">
 							活動
 						</DropdownItem>
 					</DropdownMenu>
 				</Dropdown>
-				<Link to={process.env.PUBLIC_URL + "/MLTD/about"}>關於</Link>
+				<Link to="about">關於</Link>
 			</Nav>
 		</Navbar>
 	);
-}
+};
 
 export default MyNavbar;

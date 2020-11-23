@@ -1,0 +1,19 @@
+.not-found-page.container {
+	height: 1000px;
+	position: relative;
+	>div {
+		text-align: center;
+		font-size: xx-large;
+	}
+
+	>button {
+		position: absolute;
+		right: 10%;
+		border: 0;
+		background-color: #487cce;
+
+		&:hover {
+			background-color: #e85579;
+		}
+	}
+}

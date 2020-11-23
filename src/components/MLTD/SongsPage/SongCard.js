@@ -2,8 +2,9 @@ import React from "react";
 import { CardBody, CardImg } from "reactstrap";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
+import PropTypes from "prop-types";
+
 const SongCard = (props) => {
-	const typeIconStyle = { width: "1.5em" };
 	const placeholder = (type) => {
 		let src = "";
 		if (type === "Princess")
@@ -22,8 +23,8 @@ const SongCard = (props) => {
 	};
 	return (
 		<Link
-			className={props.songType + " card"}
-			to={process.env.PUBLIC_URL + `/MLTD/songs/${props.songid}`}
+			className={props.songType + "-card card"}
+			to={`/MLTD/songs/${props.songid}`}
 		>
 			<LazyLoad once offset={100} placeholder={placeholder(props.songType)}>
 				<CardImg src={props.coverSrc} alt={props.songName_zh} />
@@ -32,12 +33,18 @@ const SongCard = (props) => {
 				<img
 					src={require("../../../assets/icons/" + props.songType + "_icon.png").default}
 					alt={props.songType + " icon"}
-					style={typeIconStyle}
+					style={{ width: "1.5em" }}
 				/>
 				<div>{props.songName_zh}</div>
 			</CardBody>
 		</Link>
 	);
+};
+
+SongCard.propTypes = {
+	songType: PropTypes.string,
+	coverSrc: PropTypes.string,
+	songName_zh: PropTypes.string,
 };
 
 export default SongCard;

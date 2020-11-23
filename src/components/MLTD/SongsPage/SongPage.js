@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
+import PropTypes from "prop-types";
 import SongData from "./SongData.json";
-import "./SongPage.scss";
 import { Button, Col, Row, Table } from "reactstrap";
 import { Link } from "react-router-dom";
 import ContextStore from "../../../ContextStore";
+import "./SongPage.scss";
+
 const SongPage = (props) => {
 	const {
 		params: { songid },
@@ -71,12 +73,14 @@ const SongPage = (props) => {
 				</tbody>
 			</Table>
 			<div className="back-button-container">
-				<Link to={process.env.PUBLIC_URL + "/MLTD/songs"}>
+				<Link to={"/MLTD/songs"}>
 					<Button id="back-button">&gt;&gt;回歌曲總覽</Button>
 				</Link>
 			</div>
 		</div>
 	);
 };
+
+SongPage.propTypes = { match: PropTypes.object };
 
 export default SongPage;

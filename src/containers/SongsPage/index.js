@@ -3,10 +3,10 @@ import { Col, Row } from "reactstrap";
 import SongCard from "../../components/MLTD/SongsPage/SongCard";
 import SongData from "../../components/MLTD/SongsPage/SongData.json";
 import SongFilter from "../../components/MLTD/SongsPage/SongFilter";
-import "./SongsPage.css";
 import contextStore from "../../ContextStore";
+import "./SongsPage.css";
 
-function SongsPage() {
+const SongsPage = () => {
 	const [filterState, setFilterState] = useState({
 		princess: false,
 		fairy: false,
@@ -52,6 +52,6 @@ function SongsPage() {
 			<Col />
 		</Row>
 	);
-}
+};
 
 export default SongsPage;

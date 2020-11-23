@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import "./CreditPage.scss";
+
 const CreditPage = () => (
 	<Row>
 		<Col xs={1} />
@@ -75,6 +76,10 @@ const CreditPage = () => (
 				<li>增加背景圖片動畫，順便偷換圖</li>
 				<li>美化歌曲資訊頁面</li>
 				<li>歌曲資料庫更新至台版2020/11/25實裝的所有曲目</li>
+			</ul>
+			<h3>0.2.1 ()</h3>
+			<ul>
+				<li>把關於頁面的網址移到/about</li>
 			</ul>
 			之後預計會隨時間陸續更新的內容：
 			<ul>
